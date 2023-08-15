@@ -1,0 +1,1934 @@
+2023-08-14 19:35:54,821:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-14 19:35:54,822:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-14 19:35:54,822:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-14 19:35:54,822:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-14 19:35:56,582:INFO:PyCaret ClassificationExperiment
+2023-08-14 19:35:56,583:INFO:Logging name: clf-default-name
+2023-08-14 19:35:56,584:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-08-14 19:35:56,585:INFO:version 3.0.4
+2023-08-14 19:35:56,585:INFO:Initializing setup()
+2023-08-14 19:35:56,585:INFO:self.USI: 2a41
+2023-08-14 19:35:56,585:INFO:self._variable_keys: {'log_plots_param', 'gpu_param', '_ml_usecase', 'X', 'gpu_n_jobs_param', 'X_test', 'memory', 'X_train', 'seed', 'fix_imbalance', 'fold_shuffle_param', '_available_plots', 'exp_id', 'pipeline', 'exp_name_log', 'data', 'target_param', 'fold_generator', 'logging_param', 'idx', 'is_multiclass', 'y_test', 'n_jobs_param', 'y_train', 'fold_groups_param', 'USI', 'html_param', 'y'}
+2023-08-14 19:35:56,586:INFO:Checking environment
+2023-08-14 19:35:56,586:INFO:python_version: 3.9.13
+2023-08-14 19:35:56,586:INFO:python_build: ('main', 'Aug 25 2022 23:51:50')
+2023-08-14 19:35:56,586:INFO:machine: AMD64
+2023-08-14 19:35:56,586:INFO:platform: Windows-10-10.0.22621-SP0
+2023-08-14 19:35:56,586:INFO:Memory: svmem(total=12653486080, available=4934856704, percent=61.0, used=7718629376, free=4934856704)
+2023-08-14 19:35:56,586:INFO:Physical Core: 4
+2023-08-14 19:35:56,586:INFO:Logical Core: 8
+2023-08-14 19:35:56,586:INFO:Checking libraries
+2023-08-14 19:35:56,586:INFO:System:
+2023-08-14 19:35:56,587:INFO:    python: 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+2023-08-14 19:35:56,587:INFO:executable: C:\Users\ferrj\anaconda3\python.exe
+2023-08-14 19:35:56,587:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-08-14 19:35:56,587:INFO:PyCaret required dependencies:
+2023-08-14 19:35:56,897:INFO:                 pip: 22.2.2
+2023-08-14 19:35:56,897:INFO:          setuptools: 63.4.1
+2023-08-14 19:35:56,898:INFO:             pycaret: 3.0.4
+2023-08-14 19:35:56,898:INFO:             IPython: 7.31.1
+2023-08-14 19:35:56,898:INFO:          ipywidgets: 7.6.5
+2023-08-14 19:35:56,898:INFO:                tqdm: 4.64.1
+2023-08-14 19:35:56,898:INFO:               numpy: 1.21.5
+2023-08-14 19:35:56,898:INFO:              pandas: 1.4.4
+2023-08-14 19:35:56,898:INFO:              jinja2: 2.11.3
+2023-08-14 19:35:56,898:INFO:               scipy: 1.9.1
+2023-08-14 19:35:56,898:INFO:              joblib: 1.3.1
+2023-08-14 19:35:56,898:INFO:             sklearn: 1.0.2
+2023-08-14 19:35:56,898:INFO:                pyod: 1.1.0
+2023-08-14 19:35:56,898:INFO:            imblearn: 0.11.0
+2023-08-14 19:35:56,898:INFO:   category_encoders: 2.6.1
+2023-08-14 19:35:56,898:INFO:            lightgbm: 4.0.0
+2023-08-14 19:35:56,898:INFO:               numba: 0.55.1
+2023-08-14 19:35:56,899:INFO:            requests: 2.28.1
+2023-08-14 19:35:56,899:INFO:          matplotlib: 3.5.2
+2023-08-14 19:35:56,899:INFO:          scikitplot: 0.3.7
+2023-08-14 19:35:56,899:INFO:         yellowbrick: 1.5
+2023-08-14 19:35:56,899:INFO:              plotly: 5.9.0
+2023-08-14 19:35:56,899:INFO:    plotly-resampler: Not installed
+2023-08-14 19:35:56,899:INFO:             kaleido: 0.2.1
+2023-08-14 19:35:56,899:INFO:           schemdraw: 0.15
+2023-08-14 19:35:56,899:INFO:         statsmodels: 0.13.2
+2023-08-14 19:35:56,899:INFO:              sktime: 0.21.0
+2023-08-14 19:35:56,899:INFO:               tbats: 1.1.3
+2023-08-14 19:35:56,899:INFO:            pmdarima: 2.0.3
+2023-08-14 19:35:56,899:INFO:              psutil: 5.9.0
+2023-08-14 19:35:56,899:INFO:          markupsafe: 2.0.1
+2023-08-14 19:35:56,899:INFO:             pickle5: Not installed
+2023-08-14 19:35:56,900:INFO:         cloudpickle: 2.0.0
+2023-08-14 19:35:56,900:INFO:         deprecation: 2.1.0
+2023-08-14 19:35:56,900:INFO:              xxhash: 3.3.0
+2023-08-14 19:35:56,900:INFO:           wurlitzer: Not installed
+2023-08-14 19:35:56,900:INFO:PyCaret optional dependencies:
+2023-08-14 19:36:01,047:INFO:                shap: Not installed
+2023-08-14 19:36:01,048:INFO:           interpret: Not installed
+2023-08-14 19:36:01,048:INFO:                umap: Not installed
+2023-08-14 19:36:01,048:INFO:    pandas_profiling: Not installed
+2023-08-14 19:36:01,048:INFO:  explainerdashboard: Not installed
+2023-08-14 19:36:01,048:INFO:             autoviz: Not installed
+2023-08-14 19:36:01,048:INFO:           fairlearn: Not installed
+2023-08-14 19:36:01,048:INFO:          deepchecks: Not installed
+2023-08-14 19:36:01,048:INFO:             xgboost: Not installed
+2023-08-14 19:36:01,048:INFO:            catboost: Not installed
+2023-08-14 19:36:01,048:INFO:              kmodes: Not installed
+2023-08-14 19:36:01,048:INFO:             mlxtend: Not installed
+2023-08-14 19:36:01,048:INFO:       statsforecast: Not installed
+2023-08-14 19:36:01,048:INFO:        tune_sklearn: Not installed
+2023-08-14 19:36:01,048:INFO:                 ray: Not installed
+2023-08-14 19:36:01,048:INFO:            hyperopt: Not installed
+2023-08-14 19:36:01,048:INFO:              optuna: Not installed
+2023-08-14 19:36:01,048:INFO:               skopt: Not installed
+2023-08-14 19:36:01,049:INFO:              mlflow: Not installed
+2023-08-14 19:36:01,049:INFO:              gradio: 3.40.1
+2023-08-14 19:36:01,049:INFO:             fastapi: 0.101.1
+2023-08-14 19:36:01,049:INFO:             uvicorn: 0.23.2
+2023-08-14 19:36:01,049:INFO:              m2cgen: Not installed
+2023-08-14 19:36:01,049:INFO:           evidently: Not installed
+2023-08-14 19:36:01,049:INFO:               fugue: Not installed
+2023-08-14 19:36:01,049:INFO:           streamlit: Not installed
+2023-08-14 19:36:01,049:INFO:             prophet: Not installed
+2023-08-14 19:36:01,049:INFO:None
+2023-08-14 19:36:01,049:INFO:Set up data.
+2023-08-14 19:36:28,588:INFO:PyCaret ClassificationExperiment
+2023-08-14 19:36:28,588:INFO:Logging name: clf-default-name
+2023-08-14 19:36:28,589:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-08-14 19:36:28,589:INFO:version 3.0.4
+2023-08-14 19:36:28,589:INFO:Initializing setup()
+2023-08-14 19:36:28,589:INFO:self.USI: ef6a
+2023-08-14 19:36:28,589:INFO:self._variable_keys: {'log_plots_param', 'gpu_param', '_ml_usecase', 'X', 'gpu_n_jobs_param', 'X_test', 'memory', 'X_train', 'seed', 'fix_imbalance', 'fold_shuffle_param', '_available_plots', 'exp_id', 'pipeline', 'exp_name_log', 'data', 'target_param', 'fold_generator', 'logging_param', 'idx', 'is_multiclass', 'y_test', 'n_jobs_param', 'y_train', 'fold_groups_param', 'USI', 'html_param', 'y'}
+2023-08-14 19:36:28,589:INFO:Checking environment
+2023-08-14 19:36:28,589:INFO:python_version: 3.9.13
+2023-08-14 19:36:28,589:INFO:python_build: ('main', 'Aug 25 2022 23:51:50')
+2023-08-14 19:36:28,589:INFO:machine: AMD64
+2023-08-14 19:36:28,589:INFO:platform: Windows-10-10.0.22621-SP0
+2023-08-14 19:36:28,589:INFO:Memory: svmem(total=12653486080, available=4829765632, percent=61.8, used=7823720448, free=4829765632)
+2023-08-14 19:36:28,589:INFO:Physical Core: 4
+2023-08-14 19:36:28,590:INFO:Logical Core: 8
+2023-08-14 19:36:28,590:INFO:Checking libraries
+2023-08-14 19:36:28,590:INFO:System:
+2023-08-14 19:36:28,590:INFO:    python: 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+2023-08-14 19:36:28,590:INFO:executable: C:\Users\ferrj\anaconda3\python.exe
+2023-08-14 19:36:28,590:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-08-14 19:36:28,590:INFO:PyCaret required dependencies:
+2023-08-14 19:36:28,590:INFO:                 pip: 22.2.2
+2023-08-14 19:36:28,590:INFO:          setuptools: 63.4.1
+2023-08-14 19:36:28,590:INFO:             pycaret: 3.0.4
+2023-08-14 19:36:28,590:INFO:             IPython: 7.31.1
+2023-08-14 19:36:28,590:INFO:          ipywidgets: 7.6.5
+2023-08-14 19:36:28,590:INFO:                tqdm: 4.64.1
+2023-08-14 19:36:28,590:INFO:               numpy: 1.21.5
+2023-08-14 19:36:28,590:INFO:              pandas: 1.4.4
+2023-08-14 19:36:28,590:INFO:              jinja2: 2.11.3
+2023-08-14 19:36:28,590:INFO:               scipy: 1.9.1
+2023-08-14 19:36:28,590:INFO:              joblib: 1.3.1
+2023-08-14 19:36:28,590:INFO:             sklearn: 1.0.2
+2023-08-14 19:36:28,590:INFO:                pyod: 1.1.0
+2023-08-14 19:36:28,591:INFO:            imblearn: 0.11.0
+2023-08-14 19:36:28,591:INFO:   category_encoders: 2.6.1
+2023-08-14 19:36:28,591:INFO:            lightgbm: 4.0.0
+2023-08-14 19:36:28,591:INFO:               numba: 0.55.1
+2023-08-14 19:36:28,591:INFO:            requests: 2.28.1
+2023-08-14 19:36:28,591:INFO:          matplotlib: 3.5.2
+2023-08-14 19:36:28,591:INFO:          scikitplot: 0.3.7
+2023-08-14 19:36:28,591:INFO:         yellowbrick: 1.5
+2023-08-14 19:36:28,591:INFO:              plotly: 5.9.0
+2023-08-14 19:36:28,591:INFO:    plotly-resampler: Not installed
+2023-08-14 19:36:28,591:INFO:             kaleido: 0.2.1
+2023-08-14 19:36:28,591:INFO:           schemdraw: 0.15
+2023-08-14 19:36:28,591:INFO:         statsmodels: 0.13.2
+2023-08-14 19:36:28,591:INFO:              sktime: 0.21.0
+2023-08-14 19:36:28,591:INFO:               tbats: 1.1.3
+2023-08-14 19:36:28,591:INFO:            pmdarima: 2.0.3
+2023-08-14 19:36:28,591:INFO:              psutil: 5.9.0
+2023-08-14 19:36:28,592:INFO:          markupsafe: 2.0.1
+2023-08-14 19:36:28,592:INFO:             pickle5: Not installed
+2023-08-14 19:36:28,592:INFO:         cloudpickle: 2.0.0
+2023-08-14 19:36:28,592:INFO:         deprecation: 2.1.0
+2023-08-14 19:36:28,592:INFO:              xxhash: 3.3.0
+2023-08-14 19:36:28,592:INFO:           wurlitzer: Not installed
+2023-08-14 19:36:28,592:INFO:PyCaret optional dependencies:
+2023-08-14 19:36:28,592:INFO:                shap: Not installed
+2023-08-14 19:36:28,592:INFO:           interpret: Not installed
+2023-08-14 19:36:28,592:INFO:                umap: Not installed
+2023-08-14 19:36:28,592:INFO:    pandas_profiling: Not installed
+2023-08-14 19:36:28,592:INFO:  explainerdashboard: Not installed
+2023-08-14 19:36:28,592:INFO:             autoviz: Not installed
+2023-08-14 19:36:28,593:INFO:           fairlearn: Not installed
+2023-08-14 19:36:28,593:INFO:          deepchecks: Not installed
+2023-08-14 19:36:28,593:INFO:             xgboost: Not installed
+2023-08-14 19:36:28,593:INFO:            catboost: Not installed
+2023-08-14 19:36:28,593:INFO:              kmodes: Not installed
+2023-08-14 19:36:28,593:INFO:             mlxtend: Not installed
+2023-08-14 19:36:28,593:INFO:       statsforecast: Not installed
+2023-08-14 19:36:28,593:INFO:        tune_sklearn: Not installed
+2023-08-14 19:36:28,593:INFO:                 ray: Not installed
+2023-08-14 19:36:28,593:INFO:            hyperopt: Not installed
+2023-08-14 19:36:28,593:INFO:              optuna: Not installed
+2023-08-14 19:36:28,593:INFO:               skopt: Not installed
+2023-08-14 19:36:28,593:INFO:              mlflow: Not installed
+2023-08-14 19:36:28,594:INFO:              gradio: 3.40.1
+2023-08-14 19:36:28,594:INFO:             fastapi: 0.101.1
+2023-08-14 19:36:28,594:INFO:             uvicorn: 0.23.2
+2023-08-14 19:36:28,594:INFO:              m2cgen: Not installed
+2023-08-14 19:36:28,594:INFO:           evidently: Not installed
+2023-08-14 19:36:28,594:INFO:               fugue: Not installed
+2023-08-14 19:36:28,594:INFO:           streamlit: Not installed
+2023-08-14 19:36:28,594:INFO:             prophet: Not installed
+2023-08-14 19:36:28,594:INFO:None
+2023-08-14 19:36:28,594:INFO:Set up data.
+2023-08-14 19:36:28,605:INFO:Set up train/test split.
+2023-08-14 19:36:28,614:INFO:Set up index.
+2023-08-14 19:36:28,614:INFO:Set up folding strategy.
+2023-08-14 19:36:28,614:INFO:Assigning column types.
+2023-08-14 19:36:28,619:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-08-14 19:36:28,703:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-08-14 19:36:28,707:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-14 19:36:28,773:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:28,774:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:28,858:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-08-14 19:36:28,859:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-14 19:36:28,916:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:28,916:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:28,917:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-08-14 19:36:29,015:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-14 19:36:29,070:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,071:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,166:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-08-14 19:36:29,223:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,393:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,394:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-08-14 19:36:29,539:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,541:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,684:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,685:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:29,691:INFO:Preparing preprocessing pipeline...
+2023-08-14 19:36:29,692:INFO:Set up label encoding.
+2023-08-14 19:36:29,693:INFO:Set up simple imputation.
+2023-08-14 19:36:29,693:INFO:Set up text embedding.
+2023-08-14 19:36:29,696:INFO:Set up encoding of categorical features.
+2023-08-14 19:36:30,270:INFO:Finished creating preprocessing pipeline.
+2023-08-14 19:36:30,281:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\ferrj\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strateg...
+                 TransformerWrapper(exclude=None, include=['description'],
+                                    transformer=EmbedTextFeatures(kwargs=None,
+                                                                  method='tf-idf'))),
+                ('onehot_encoding',
+                 TransformerWrapper(exclude=None, include=['province'],
+                                    transformer=OneHotEncoder(cols=['province'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0)))],
+         verbose=False)
+2023-08-14 19:36:30,281:INFO:Creating final display dataframe.
+2023-08-14 19:36:32,208:INFO:Setup _display_container:                        Description                       Value
+0                       Session id                         123
+1                           Target                   wine_type
+2                      Target type                  Multiclass
+3                   Target mapping  other: 0, red: 1, white: 2
+4              Original data shape                   (1000, 3)
+5           Transformed data shape                (1000, 3553)
+6      Transformed train set shape                 (700, 3553)
+7       Transformed test set shape                 (300, 3553)
+8                    Text features                           1
+9             Categorical features                           1
+10                      Preprocess                        True
+11                 Imputation type                      simple
+12              Numeric imputation                        mean
+13          Categorical imputation                        mode
+14  Text features embedding method                      tf-idf
+15        Maximum one-hot encoding                          25
+16                 Encoding method                        None
+17                  Fold Generator             StratifiedKFold
+18                     Fold Number                          10
+19                        CPU Jobs                          -1
+20                         Use GPU                       False
+21                  Log Experiment                       False
+22                 Experiment Name            clf-default-name
+23                             USI                        ef6a
+2023-08-14 19:36:32,387:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:32,387:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:32,547:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:32,549:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-14 19:36:32,549:INFO:setup() successfully completed in 4.12s...............
+2023-08-14 19:36:34,658:INFO:Initializing get_config()
+2023-08-14 19:36:34,658:INFO:get_config(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, variable=X_train_transformed)
+2023-08-14 19:36:34,865:INFO:Variable: X_train returned as        description_000  description_04  description_10  description_100  \
+41705              0.0             0.0             0.0              0.0   
+30469              0.0             0.0             0.0              0.0   
+70885              0.0             0.0             0.0              0.0   
+17973              0.0             0.0             0.0              0.0   
+65873              0.0             0.0             0.0              0.0   
+...                ...             ...             ...              ...   
+59684              0.0             0.0             0.0              0.0   
+59085              0.0             0.0             0.0              0.0   
+25079              0.0             0.0             0.0              0.0   
+41626              0.0             0.0             0.0              0.0   
+19998              0.0             0.0             0.0              0.0   
+
+       description_11  description_12  description_13  description_14  \
+41705             0.0             0.0        0.000000             0.0   
+30469             0.0             0.0        0.000000             0.0   
+70885             0.0             0.0        0.180526             0.0   
+17973             0.0             0.0        0.000000             0.0   
+65873             0.0             0.0        0.000000             0.0   
+...               ...             ...             ...             ...   
+59684             0.0             0.0        0.000000             0.0   
+59085             0.0             0.0        0.000000             0.0   
+25079             0.0             0.0        0.000000             0.0   
+41626             0.0             0.0        0.000000             0.0   
+19998             0.0             0.0        0.000000             0.0   
+
+       description_15  description_16  ...  province_California  \
+41705             0.0             0.0  ...                  1.0   
+30469             0.0             0.0  ...                  1.0   
+70885             0.0             0.0  ...                  0.0   
+17973             0.0             0.0  ...                  0.0   
+65873             0.0             0.0  ...                  0.0   
+...               ...             ...  ...                  ...   
+59684             0.0             0.0  ...                  0.0   
+59085             0.0             0.0  ...                  0.0   
+25079             0.0             0.0  ...                  0.0   
+41626             0.0             0.0  ...                  1.0   
+19998             0.0             0.0  ...                  1.0   
+
+       province_Washington  province_Burgundy  province_Piedmont  \
+41705                  0.0                0.0                0.0   
+30469                  0.0                0.0                0.0   
+70885                  1.0                0.0                0.0   
+17973                  0.0                1.0                0.0   
+65873                  1.0                0.0                0.0   
+...                    ...                ...                ...   
+59684                  0.0                0.0                0.0   
+59085                  0.0                0.0                0.0   
+25079                  0.0                0.0                0.0   
+41626                  0.0                0.0                0.0   
+19998                  0.0                0.0                0.0   
+
+       province_Oregon  province_Mendoza Province  province_Tuscany  \
+41705              0.0                        0.0               0.0   
+30469              0.0                        0.0               0.0   
+70885              0.0                        0.0               0.0   
+17973              0.0                        0.0               0.0   
+65873              0.0                        0.0               0.0   
+...                ...                        ...               ...   
+59684              0.0                        0.0               1.0   
+59085              0.0                        0.0               1.0   
+25079              0.0                        0.0               0.0   
+41626              0.0                        0.0               0.0   
+19998              0.0                        0.0               0.0   
+
+       province_Bordeaux  province_Northern Spain  province_Veneto  
+41705                0.0                      0.0              0.0  
+30469                0.0                      0.0              0.0  
+70885                0.0                      0.0              0.0  
+17973                0.0                      0.0              0.0  
+65873                0.0                      0.0              0.0  
+...                  ...                      ...              ...  
+59684                0.0                      0.0              0.0  
+59085                0.0                      0.0              0.0  
+25079                0.0                      1.0              0.0  
+41626                0.0                      0.0              0.0  
+19998                0.0                      0.0              0.0  
+
+[700 rows x 3552 columns]
+2023-08-14 19:36:34,865:INFO:get_config() successfully completed......................................
+2023-08-14 19:36:36,124:INFO:Initializing compare_models()
+2023-08-14 19:36:36,124:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, include=None, fold=5, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, 'include': None, 'exclude': None, 'fold': 5, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-08-14 19:36:36,125:INFO:Checking exceptions
+2023-08-14 19:36:36,132:INFO:Preparing display monitor
+2023-08-14 19:36:36,229:INFO:Initializing Logistic Regression
+2023-08-14 19:36:36,230:INFO:Total runtime is 2.0714600880940757e-05 minutes
+2023-08-14 19:36:36,236:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:36:36,237:INFO:Initializing create_model()
+2023-08-14 19:36:36,238:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=lr, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:36:36,238:INFO:Checking exceptions
+2023-08-14 19:36:36,238:INFO:Importing libraries
+2023-08-14 19:36:36,238:INFO:Copying training dataset
+2023-08-14 19:36:36,248:INFO:Defining folds
+2023-08-14 19:36:36,248:INFO:Declaring metric variables
+2023-08-14 19:36:36,257:INFO:Importing untrained model
+2023-08-14 19:36:36,263:INFO:Logistic Regression Imported successfully
+2023-08-14 19:36:36,278:INFO:Starting cross validation
+2023-08-14 19:36:36,295:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:36:52,551:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,557:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,559:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:36:52,560:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,561:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,562:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,564:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:36:52,565:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,575:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,578:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,578:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,579:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:36:52,581:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,582:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,585:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:36:52,586:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,607:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,609:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:52,611:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:36:52,613:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:53,523:INFO:Calculating mean and std
+2023-08-14 19:36:53,529:INFO:Creating metrics dataframe
+2023-08-14 19:36:53,851:INFO:Uploading results into container
+2023-08-14 19:36:53,853:INFO:Uploading model into container now
+2023-08-14 19:36:53,853:INFO:_master_model_container: 1
+2023-08-14 19:36:53,854:INFO:_display_container: 2
+2023-08-14 19:36:53,855:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-08-14 19:36:53,855:INFO:create_model() successfully completed......................................
+2023-08-14 19:36:54,031:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:36:54,031:INFO:Creating metrics dataframe
+2023-08-14 19:36:54,058:INFO:Initializing K Neighbors Classifier
+2023-08-14 19:36:54,058:INFO:Total runtime is 0.29716041882832844 minutes
+2023-08-14 19:36:54,067:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:36:54,068:INFO:Initializing create_model()
+2023-08-14 19:36:54,068:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=knn, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:36:54,068:INFO:Checking exceptions
+2023-08-14 19:36:54,069:INFO:Importing libraries
+2023-08-14 19:36:54,069:INFO:Copying training dataset
+2023-08-14 19:36:54,083:INFO:Defining folds
+2023-08-14 19:36:54,084:INFO:Declaring metric variables
+2023-08-14 19:36:54,095:INFO:Importing untrained model
+2023-08-14 19:36:54,104:INFO:K Neighbors Classifier Imported successfully
+2023-08-14 19:36:54,130:INFO:Starting cross validation
+2023-08-14 19:36:54,143:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:36:56,118:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\neighbors\_classification.py:228: FutureWarning: Unlike other reduction functions (e.g. `skew`, `kurtosis`), the default behavior of `mode` typically preserves the axis it acts along. In SciPy 1.11.0, this behavior will change: the default value of `keepdims` will become False, the `axis` over which the statistic is taken will be eliminated, and the value None will no longer be accepted. Set `keepdims` to True or False to avoid this warning.
+  mode, _ = stats.mode(_y[neigh_ind, k], axis=1)
+
+2023-08-14 19:36:56,167:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\neighbors\_classification.py:228: FutureWarning: Unlike other reduction functions (e.g. `skew`, `kurtosis`), the default behavior of `mode` typically preserves the axis it acts along. In SciPy 1.11.0, this behavior will change: the default value of `keepdims` will become False, the `axis` over which the statistic is taken will be eliminated, and the value None will no longer be accepted. Set `keepdims` to True or False to avoid this warning.
+  mode, _ = stats.mode(_y[neigh_ind, k], axis=1)
+
+2023-08-14 19:36:56,419:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:56,422:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:56,425:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:56,485:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:56,487:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:36:56,488:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,512:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\neighbors\_classification.py:228: FutureWarning: Unlike other reduction functions (e.g. `skew`, `kurtosis`), the default behavior of `mode` typically preserves the axis it acts along. In SciPy 1.11.0, this behavior will change: the default value of `keepdims` will become False, the `axis` over which the statistic is taken will be eliminated, and the value None will no longer be accepted. Set `keepdims` to True or False to avoid this warning.
+  mode, _ = stats.mode(_y[neigh_ind, k], axis=1)
+
+2023-08-14 19:37:04,573:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\neighbors\_classification.py:228: FutureWarning: Unlike other reduction functions (e.g. `skew`, `kurtosis`), the default behavior of `mode` typically preserves the axis it acts along. In SciPy 1.11.0, this behavior will change: the default value of `keepdims` will become False, the `axis` over which the statistic is taken will be eliminated, and the value None will no longer be accepted. Set `keepdims` to True or False to avoid this warning.
+  mode, _ = stats.mode(_y[neigh_ind, k], axis=1)
+
+2023-08-14 19:37:04,815:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,821:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,821:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,824:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,824:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,827:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,848:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,851:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:04,852:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:05,298:INFO:Calculating mean and std
+2023-08-14 19:37:05,302:INFO:Creating metrics dataframe
+2023-08-14 19:37:05,581:INFO:Uploading results into container
+2023-08-14 19:37:05,583:INFO:Uploading model into container now
+2023-08-14 19:37:05,583:INFO:_master_model_container: 2
+2023-08-14 19:37:05,583:INFO:_display_container: 2
+2023-08-14 19:37:05,584:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-08-14 19:37:05,584:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:05,748:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:05,748:INFO:Creating metrics dataframe
+2023-08-14 19:37:05,775:INFO:Initializing Naive Bayes
+2023-08-14 19:37:05,775:INFO:Total runtime is 0.49243528445561724 minutes
+2023-08-14 19:37:05,783:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:05,784:INFO:Initializing create_model()
+2023-08-14 19:37:05,785:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=nb, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:05,785:INFO:Checking exceptions
+2023-08-14 19:37:05,785:INFO:Importing libraries
+2023-08-14 19:37:05,785:INFO:Copying training dataset
+2023-08-14 19:37:05,800:INFO:Defining folds
+2023-08-14 19:37:05,801:INFO:Declaring metric variables
+2023-08-14 19:37:05,809:INFO:Importing untrained model
+2023-08-14 19:37:05,821:INFO:Naive Bayes Imported successfully
+2023-08-14 19:37:05,837:INFO:Starting cross validation
+2023-08-14 19:37:05,854:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:07,598:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,602:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,606:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,632:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,636:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,639:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:07,641:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,704:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,707:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,708:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,709:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:07,711:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,712:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,714:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:07,716:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,726:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,729:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:07,731:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:07,732:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:08,475:INFO:Calculating mean and std
+2023-08-14 19:37:08,478:INFO:Creating metrics dataframe
+2023-08-14 19:37:08,799:INFO:Uploading results into container
+2023-08-14 19:37:08,802:INFO:Uploading model into container now
+2023-08-14 19:37:08,803:INFO:_master_model_container: 3
+2023-08-14 19:37:08,803:INFO:_display_container: 2
+2023-08-14 19:37:08,803:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-08-14 19:37:08,804:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:08,974:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:08,974:INFO:Creating metrics dataframe
+2023-08-14 19:37:08,992:INFO:Initializing Decision Tree Classifier
+2023-08-14 19:37:08,992:INFO:Total runtime is 0.5460518876711528 minutes
+2023-08-14 19:37:09,000:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:09,001:INFO:Initializing create_model()
+2023-08-14 19:37:09,001:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=dt, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:09,002:INFO:Checking exceptions
+2023-08-14 19:37:09,002:INFO:Importing libraries
+2023-08-14 19:37:09,002:INFO:Copying training dataset
+2023-08-14 19:37:09,014:INFO:Defining folds
+2023-08-14 19:37:09,015:INFO:Declaring metric variables
+2023-08-14 19:37:09,027:INFO:Importing untrained model
+2023-08-14 19:37:09,037:INFO:Decision Tree Classifier Imported successfully
+2023-08-14 19:37:09,056:INFO:Starting cross validation
+2023-08-14 19:37:09,068:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:11,010:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,012:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,016:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,080:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,083:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,087:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,128:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,133:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,136:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,159:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,163:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,165:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:11,166:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,178:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,184:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,189:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:11,967:INFO:Calculating mean and std
+2023-08-14 19:37:11,972:INFO:Creating metrics dataframe
+2023-08-14 19:37:12,306:INFO:Uploading results into container
+2023-08-14 19:37:12,308:INFO:Uploading model into container now
+2023-08-14 19:37:12,308:INFO:_master_model_container: 4
+2023-08-14 19:37:12,309:INFO:_display_container: 2
+2023-08-14 19:37:12,309:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=123, splitter='best')
+2023-08-14 19:37:12,309:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:12,476:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:12,477:INFO:Creating metrics dataframe
+2023-08-14 19:37:12,503:INFO:Initializing SVM - Linear Kernel
+2023-08-14 19:37:12,504:INFO:Total runtime is 0.6045863350232442 minutes
+2023-08-14 19:37:12,510:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:12,511:INFO:Initializing create_model()
+2023-08-14 19:37:12,511:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=svm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:12,511:INFO:Checking exceptions
+2023-08-14 19:37:12,512:INFO:Importing libraries
+2023-08-14 19:37:12,512:INFO:Copying training dataset
+2023-08-14 19:37:12,525:INFO:Defining folds
+2023-08-14 19:37:12,525:INFO:Declaring metric variables
+2023-08-14 19:37:12,537:INFO:Importing untrained model
+2023-08-14 19:37:12,546:INFO:SVM - Linear Kernel Imported successfully
+2023-08-14 19:37:12,572:INFO:Starting cross validation
+2023-08-14 19:37:12,590:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:14,442:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-14 19:37:14,443:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,446:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,448:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,467:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-14 19:37:14,468:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,470:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-14 19:37:14,471:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,471:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,472:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:14,474:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,475:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,476:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-14 19:37:14,477:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\utils\metaestimators.py", line 109, in __get__
+    if not self.check(obj):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1199, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-08-14 19:37:14,477:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,479:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,479:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,481:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,483:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,485:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:14,485:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:14,486:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:15,349:INFO:Calculating mean and std
+2023-08-14 19:37:15,352:INFO:Creating metrics dataframe
+2023-08-14 19:37:15,713:INFO:Uploading results into container
+2023-08-14 19:37:15,714:INFO:Uploading model into container now
+2023-08-14 19:37:15,716:INFO:_master_model_container: 5
+2023-08-14 19:37:15,716:INFO:_display_container: 2
+2023-08-14 19:37:15,716:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-08-14 19:37:15,716:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:15,891:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:15,892:INFO:Creating metrics dataframe
+2023-08-14 19:37:15,910:INFO:Initializing Ridge Classifier
+2023-08-14 19:37:15,911:INFO:Total runtime is 0.661378006140391 minutes
+2023-08-14 19:37:15,918:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:15,919:INFO:Initializing create_model()
+2023-08-14 19:37:15,920:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ridge, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:15,920:INFO:Checking exceptions
+2023-08-14 19:37:15,920:INFO:Importing libraries
+2023-08-14 19:37:15,920:INFO:Copying training dataset
+2023-08-14 19:37:15,931:INFO:Defining folds
+2023-08-14 19:37:15,932:INFO:Declaring metric variables
+2023-08-14 19:37:15,945:INFO:Importing untrained model
+2023-08-14 19:37:15,958:INFO:Ridge Classifier Imported successfully
+2023-08-14 19:37:15,974:INFO:Starting cross validation
+2023-08-14 19:37:15,992:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:17,623:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-14 19:37:17,625:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,628:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,629:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:17,632:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,646:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-14 19:37:17,649:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,653:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,656:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:17,659:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,675:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-14 19:37:17,677:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,679:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,682:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:17,684:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,692:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-14 19:37:17,694:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,698:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,701:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:17,703:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,711:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 71, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 298, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_scorer.py", line 73, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-08-14 19:37:17,713:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,719:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:17,721:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:17,727:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:18,614:INFO:Calculating mean and std
+2023-08-14 19:37:18,617:INFO:Creating metrics dataframe
+2023-08-14 19:37:18,933:INFO:Uploading results into container
+2023-08-14 19:37:18,934:INFO:Uploading model into container now
+2023-08-14 19:37:18,935:INFO:_master_model_container: 6
+2023-08-14 19:37:18,935:INFO:_display_container: 2
+2023-08-14 19:37:18,936:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize='deprecated', positive=False,
+                random_state=123, solver='auto', tol=0.001)
+2023-08-14 19:37:18,936:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:19,129:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:19,130:INFO:Creating metrics dataframe
+2023-08-14 19:37:19,152:INFO:Initializing Random Forest Classifier
+2023-08-14 19:37:19,153:INFO:Total runtime is 0.7154107650121053 minutes
+2023-08-14 19:37:19,161:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:19,162:INFO:Initializing create_model()
+2023-08-14 19:37:19,162:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=rf, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:19,162:INFO:Checking exceptions
+2023-08-14 19:37:19,162:INFO:Importing libraries
+2023-08-14 19:37:19,163:INFO:Copying training dataset
+2023-08-14 19:37:19,171:INFO:Defining folds
+2023-08-14 19:37:19,171:INFO:Declaring metric variables
+2023-08-14 19:37:19,182:INFO:Importing untrained model
+2023-08-14 19:37:19,199:INFO:Random Forest Classifier Imported successfully
+2023-08-14 19:37:19,217:INFO:Starting cross validation
+2023-08-14 19:37:19,229:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:22,637:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,640:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,644:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:22,649:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,738:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,738:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,742:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,743:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,744:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:22,745:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:22,745:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,746:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,827:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,832:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,834:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:22,835:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,843:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,847:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:22,849:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:22,851:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:23,686:INFO:Calculating mean and std
+2023-08-14 19:37:23,691:INFO:Creating metrics dataframe
+2023-08-14 19:37:24,032:INFO:Uploading results into container
+2023-08-14 19:37:24,034:INFO:Uploading model into container now
+2023-08-14 19:37:24,034:INFO:_master_model_container: 7
+2023-08-14 19:37:24,034:INFO:_display_container: 2
+2023-08-14 19:37:24,035:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=123, verbose=0, warm_start=False)
+2023-08-14 19:37:24,035:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:24,202:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:24,202:INFO:Creating metrics dataframe
+2023-08-14 19:37:24,222:INFO:Initializing Quadratic Discriminant Analysis
+2023-08-14 19:37:24,223:INFO:Total runtime is 0.7999018947283427 minutes
+2023-08-14 19:37:24,232:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:24,233:INFO:Initializing create_model()
+2023-08-14 19:37:24,234:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=qda, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:24,234:INFO:Checking exceptions
+2023-08-14 19:37:24,234:INFO:Importing libraries
+2023-08-14 19:37:24,234:INFO:Copying training dataset
+2023-08-14 19:37:24,245:INFO:Defining folds
+2023-08-14 19:37:24,246:INFO:Declaring metric variables
+2023-08-14 19:37:24,256:INFO:Importing untrained model
+2023-08-14 19:37:24,267:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-08-14 19:37:24,283:INFO:Starting cross validation
+2023-08-14 19:37:24,300:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:24,872:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\discriminant_analysis.py:878: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-14 19:37:24,875:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\discriminant_analysis.py:878: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-14 19:37:24,910:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\discriminant_analysis.py:878: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-14 19:37:24,915:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\discriminant_analysis.py:878: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-14 19:37:24,920:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\discriminant_analysis.py:878: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-14 19:37:29,724:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:29,726:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:29,728:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:29,799:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:29,804:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:29,808:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,016:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,024:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,029:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,033:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,037:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,041:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,067:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,071:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,074:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:30,892:INFO:Calculating mean and std
+2023-08-14 19:37:30,900:INFO:Creating metrics dataframe
+2023-08-14 19:37:31,257:INFO:Uploading results into container
+2023-08-14 19:37:31,259:INFO:Uploading model into container now
+2023-08-14 19:37:31,259:INFO:_master_model_container: 8
+2023-08-14 19:37:31,259:INFO:_display_container: 2
+2023-08-14 19:37:31,260:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-08-14 19:37:31,261:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:31,413:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:31,414:INFO:Creating metrics dataframe
+2023-08-14 19:37:31,432:INFO:Initializing Ada Boost Classifier
+2023-08-14 19:37:31,432:INFO:Total runtime is 0.920061206817627 minutes
+2023-08-14 19:37:31,441:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:31,442:INFO:Initializing create_model()
+2023-08-14 19:37:31,442:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ada, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:31,442:INFO:Checking exceptions
+2023-08-14 19:37:31,442:INFO:Importing libraries
+2023-08-14 19:37:31,442:INFO:Copying training dataset
+2023-08-14 19:37:31,452:INFO:Defining folds
+2023-08-14 19:37:31,453:INFO:Declaring metric variables
+2023-08-14 19:37:31,464:INFO:Importing untrained model
+2023-08-14 19:37:31,474:INFO:Ada Boost Classifier Imported successfully
+2023-08-14 19:37:31,501:INFO:Starting cross validation
+2023-08-14 19:37:31,518:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:36,451:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,456:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,459:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,582:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,586:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,590:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,664:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,667:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,669:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:36,671:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,691:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,697:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,700:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,726:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,729:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:36,733:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:37,521:INFO:Calculating mean and std
+2023-08-14 19:37:37,524:INFO:Creating metrics dataframe
+2023-08-14 19:37:37,905:INFO:Uploading results into container
+2023-08-14 19:37:37,906:INFO:Uploading model into container now
+2023-08-14 19:37:37,907:INFO:_master_model_container: 9
+2023-08-14 19:37:37,908:INFO:_display_container: 2
+2023-08-14 19:37:37,908:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=123)
+2023-08-14 19:37:37,909:INFO:create_model() successfully completed......................................
+2023-08-14 19:37:38,073:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:37:38,073:INFO:Creating metrics dataframe
+2023-08-14 19:37:38,092:INFO:Initializing Gradient Boosting Classifier
+2023-08-14 19:37:38,092:INFO:Total runtime is 1.0310580372810365 minutes
+2023-08-14 19:37:38,100:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:37:38,101:INFO:Initializing create_model()
+2023-08-14 19:37:38,101:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=gbc, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:37:38,101:INFO:Checking exceptions
+2023-08-14 19:37:38,101:INFO:Importing libraries
+2023-08-14 19:37:38,102:INFO:Copying training dataset
+2023-08-14 19:37:38,112:INFO:Defining folds
+2023-08-14 19:37:38,113:INFO:Declaring metric variables
+2023-08-14 19:37:38,119:INFO:Importing untrained model
+2023-08-14 19:37:38,132:INFO:Gradient Boosting Classifier Imported successfully
+2023-08-14 19:37:38,152:INFO:Starting cross validation
+2023-08-14 19:37:38,168:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:37:57,324:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.52s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2023-08-14 19:37:58,632:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,636:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,639:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,643:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,646:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,648:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,690:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,693:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,696:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:58,698:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,842:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,847:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:58,849:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:37:58,851:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:59,081:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:59,083:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:59,086:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:37:59,699:INFO:Calculating mean and std
+2023-08-14 19:37:59,703:INFO:Creating metrics dataframe
+2023-08-14 19:38:00,110:INFO:Uploading results into container
+2023-08-14 19:38:00,112:INFO:Uploading model into container now
+2023-08-14 19:38:00,113:INFO:_master_model_container: 10
+2023-08-14 19:38:00,113:INFO:_display_container: 2
+2023-08-14 19:38:00,114:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-08-14 19:38:00,114:INFO:create_model() successfully completed......................................
+2023-08-14 19:38:00,279:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:38:00,279:INFO:Creating metrics dataframe
+2023-08-14 19:38:00,301:INFO:Initializing Linear Discriminant Analysis
+2023-08-14 19:38:00,302:INFO:Total runtime is 1.4012225389480593 minutes
+2023-08-14 19:38:00,309:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:38:00,309:INFO:Initializing create_model()
+2023-08-14 19:38:00,310:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=lda, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:38:00,310:INFO:Checking exceptions
+2023-08-14 19:38:00,310:INFO:Importing libraries
+2023-08-14 19:38:00,310:INFO:Copying training dataset
+2023-08-14 19:38:00,318:INFO:Defining folds
+2023-08-14 19:38:00,319:INFO:Declaring metric variables
+2023-08-14 19:38:00,325:INFO:Importing untrained model
+2023-08-14 19:38:00,335:INFO:Linear Discriminant Analysis Imported successfully
+2023-08-14 19:38:00,358:INFO:Starting cross validation
+2023-08-14 19:38:00,376:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:38:08,888:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:08,891:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:08,893:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:08,895:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,129:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,133:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,135:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:09,138:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,184:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,188:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,190:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:09,191:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,208:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,213:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,215:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:09,217:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,290:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,293:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:09,297:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:10,006:INFO:Calculating mean and std
+2023-08-14 19:38:10,008:INFO:Creating metrics dataframe
+2023-08-14 19:38:10,414:INFO:Uploading results into container
+2023-08-14 19:38:10,416:INFO:Uploading model into container now
+2023-08-14 19:38:10,417:INFO:_master_model_container: 11
+2023-08-14 19:38:10,417:INFO:_display_container: 2
+2023-08-14 19:38:10,418:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2023-08-14 19:38:10,418:INFO:create_model() successfully completed......................................
+2023-08-14 19:38:10,587:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:38:10,588:INFO:Creating metrics dataframe
+2023-08-14 19:38:10,611:INFO:Initializing Extra Trees Classifier
+2023-08-14 19:38:10,612:INFO:Total runtime is 1.5730587681134542 minutes
+2023-08-14 19:38:10,619:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:38:10,619:INFO:Initializing create_model()
+2023-08-14 19:38:10,620:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=et, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:38:10,620:INFO:Checking exceptions
+2023-08-14 19:38:10,620:INFO:Importing libraries
+2023-08-14 19:38:10,620:INFO:Copying training dataset
+2023-08-14 19:38:10,628:INFO:Defining folds
+2023-08-14 19:38:10,629:INFO:Declaring metric variables
+2023-08-14 19:38:10,636:INFO:Importing untrained model
+2023-08-14 19:38:10,645:INFO:Extra Trees Classifier Imported successfully
+2023-08-14 19:38:10,672:INFO:Starting cross validation
+2023-08-14 19:38:10,688:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:38:13,883:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,886:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,889:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:13,891:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,913:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,917:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,919:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:13,919:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,946:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,949:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:13,951:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:13,953:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:14,102:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:14,105:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:14,107:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:14,108:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:14,116:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:14,120:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:14,123:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:14,995:INFO:Calculating mean and std
+2023-08-14 19:38:14,999:INFO:Creating metrics dataframe
+2023-08-14 19:38:15,383:INFO:Uploading results into container
+2023-08-14 19:38:15,384:INFO:Uploading model into container now
+2023-08-14 19:38:15,385:INFO:_master_model_container: 12
+2023-08-14 19:38:15,385:INFO:_display_container: 2
+2023-08-14 19:38:15,386:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False)
+2023-08-14 19:38:15,386:INFO:create_model() successfully completed......................................
+2023-08-14 19:38:15,538:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:38:15,539:INFO:Creating metrics dataframe
+2023-08-14 19:38:15,569:INFO:Initializing Light Gradient Boosting Machine
+2023-08-14 19:38:15,570:INFO:Total runtime is 1.655667515595754 minutes
+2023-08-14 19:38:15,576:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:38:15,576:INFO:Initializing create_model()
+2023-08-14 19:38:15,577:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=lightgbm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:38:15,577:INFO:Checking exceptions
+2023-08-14 19:38:15,577:INFO:Importing libraries
+2023-08-14 19:38:15,577:INFO:Copying training dataset
+2023-08-14 19:38:15,584:INFO:Defining folds
+2023-08-14 19:38:15,585:INFO:Declaring metric variables
+2023-08-14 19:38:15,594:INFO:Importing untrained model
+2023-08-14 19:38:15,615:INFO:Light Gradient Boosting Machine Imported successfully
+2023-08-14 19:38:15,635:INFO:Starting cross validation
+2023-08-14 19:38:15,649:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:38:19,795:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,800:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,802:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:19,804:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,967:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,972:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,974:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:19,976:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,978:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,981:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:19,983:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:19,985:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:20,142:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:20,147:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:20,149:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:20,150:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:20,165:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:20,168:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:20,172:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:20,174:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:21,034:INFO:Calculating mean and std
+2023-08-14 19:38:21,036:INFO:Creating metrics dataframe
+2023-08-14 19:38:21,441:INFO:Uploading results into container
+2023-08-14 19:38:21,442:INFO:Uploading model into container now
+2023-08-14 19:38:21,443:INFO:_master_model_container: 13
+2023-08-14 19:38:21,443:INFO:_display_container: 2
+2023-08-14 19:38:21,444:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2023-08-14 19:38:21,444:INFO:create_model() successfully completed......................................
+2023-08-14 19:38:21,599:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:38:21,600:INFO:Creating metrics dataframe
+2023-08-14 19:38:21,625:INFO:Initializing Dummy Classifier
+2023-08-14 19:38:21,626:INFO:Total runtime is 1.7566194454828898 minutes
+2023-08-14 19:38:21,632:INFO:SubProcess create_model() called ==================================
+2023-08-14 19:38:21,632:INFO:Initializing create_model()
+2023-08-14 19:38:21,633:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=dummy, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EBC06FE130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:38:21,633:INFO:Checking exceptions
+2023-08-14 19:38:21,633:INFO:Importing libraries
+2023-08-14 19:38:21,633:INFO:Copying training dataset
+2023-08-14 19:38:21,642:INFO:Defining folds
+2023-08-14 19:38:21,644:INFO:Declaring metric variables
+2023-08-14 19:38:21,650:INFO:Importing untrained model
+2023-08-14 19:38:21,657:INFO:Dummy Classifier Imported successfully
+2023-08-14 19:38:21,678:INFO:Starting cross validation
+2023-08-14 19:38:21,693:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-08-14 19:38:22,917:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,920:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,923:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:22,923:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,924:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,925:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,927:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:22,930:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,957:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,961:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:22,963:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:22,964:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:23,362:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:23,364:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:23,365:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:23,366:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:23,367:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:23,372:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:23,374:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:23,375:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:24,101:INFO:Calculating mean and std
+2023-08-14 19:38:24,104:INFO:Creating metrics dataframe
+2023-08-14 19:38:24,534:INFO:Uploading results into container
+2023-08-14 19:38:24,535:INFO:Uploading model into container now
+2023-08-14 19:38:24,536:INFO:_master_model_container: 14
+2023-08-14 19:38:24,536:INFO:_display_container: 2
+2023-08-14 19:38:24,537:INFO:DummyClassifier(constant=None, random_state=123, strategy='prior')
+2023-08-14 19:38:24,537:INFO:create_model() successfully completed......................................
+2023-08-14 19:38:24,695:INFO:SubProcess create_model() end ==================================
+2023-08-14 19:38:24,695:INFO:Creating metrics dataframe
+2023-08-14 19:38:24,734:INFO:Initializing create_model()
+2023-08-14 19:38:24,735:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-08-14 19:38:24,735:INFO:Checking exceptions
+2023-08-14 19:38:24,738:INFO:Importing libraries
+2023-08-14 19:38:24,739:INFO:Copying training dataset
+2023-08-14 19:38:24,747:INFO:Defining folds
+2023-08-14 19:38:24,747:INFO:Declaring metric variables
+2023-08-14 19:38:24,747:INFO:Importing untrained model
+2023-08-14 19:38:24,747:INFO:Declaring custom model
+2023-08-14 19:38:24,749:INFO:Extra Trees Classifier Imported successfully
+2023-08-14 19:38:24,759:INFO:Cross validation set to False
+2023-08-14 19:38:24,759:INFO:Fitting Model
+2023-08-14 19:38:26,089:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.51s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2023-08-14 19:38:26,321:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False)
+2023-08-14 19:38:26,321:INFO:create_model() successfully completed......................................
+2023-08-14 19:38:26,561:INFO:_master_model_container: 14
+2023-08-14 19:38:26,561:INFO:_display_container: 2
+2023-08-14 19:38:26,562:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False)
+2023-08-14 19:38:26,562:INFO:compare_models() successfully completed......................................
+2023-08-14 19:38:32,848:INFO:Initializing evaluate_model()
+2023-08-14 19:38:32,848:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2023-08-14 19:38:32,907:INFO:Initializing plot_model()
+2023-08-14 19:38:32,908:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, system=True)
+2023-08-14 19:38:32,908:INFO:Checking exceptions
+2023-08-14 19:38:32,960:INFO:Preloading libraries
+2023-08-14 19:38:32,979:INFO:Copying training dataset
+2023-08-14 19:38:32,979:INFO:Plot type: pipeline
+2023-08-14 19:38:33,242:INFO:Visual Rendered Successfully
+2023-08-14 19:38:33,402:INFO:plot_model() successfully completed......................................
+2023-08-14 19:38:35,615:INFO:Initializing predict_model()
+2023-08-14 19:38:35,616:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EBCB3121F0>)
+2023-08-14 19:38:35,617:INFO:Checking exceptions
+2023-08-14 19:38:35,617:INFO:Preloading libraries
+2023-08-14 19:38:36,103:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\utils\generic.py:586: UserWarning: Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 35, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_ranking.py", line 561, in roc_auc_score
+    return _multiclass_roc_auc_score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_ranking.py", line 627, in _multiclass_roc_auc_score
+    if not np.allclose(1, y_score.sum(axis=1)):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\numpy\core\_methods.py", line 48, in _sum
+    return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 584, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\metrics.py", line 35, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_ranking.py", line 561, in roc_auc_score
+    return _multiclass_roc_auc_score(
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_ranking.py", line 627, in _multiclass_roc_auc_score
+    if not np.allclose(1, y_score.sum(axis=1)):
+  File "C:\Users\ferrj\anaconda3\lib\site-packages\numpy\core\_methods.py", line 48, in _sum
+    return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
+
+  warnings.warn(traceback.format_exc())
+
+2023-08-14 19:38:36,107:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:36,110:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:36,111:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-08-14 19:38:36,112:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1370: UserWarning: Note that pos_label (set to 'white') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-08-14 19:38:44,341:INFO:Soft dependency imported: gradio: 3.40.1
+2023-08-14 19:38:44,348:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5420: GradioDeprecationWarning: Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+  all_inputs.append(gr.inputs.Textbox(label=i))
+
+2023-08-14 19:38:44,349:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5420: GradioDeprecationWarning: `optional` parameter is deprecated, and it has no effect
+  all_inputs.append(gr.inputs.Textbox(label=i))
+
+2023-08-14 19:38:44,349:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5420: GradioDeprecationWarning: `numeric` parameter is deprecated, and it has no effect
+  all_inputs.append(gr.inputs.Textbox(label=i))
+
+2023-08-14 19:38:44,354:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5418: GradioDeprecationWarning: Usage of gradio.inputs is deprecated, and will not be supported in the future, please import your component from gradio.components
+  all_inputs.append(gr.inputs.Dropdown(list(self.X[i].unique()), label=i))
+
+2023-08-14 19:38:44,355:WARNING:C:\Users\ferrj\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:5418: GradioDeprecationWarning: `optional` parameter is deprecated, and it has no effect
+  all_inputs.append(gr.inputs.Dropdown(list(self.X[i].unique()), label=i))
+
+2023-08-14 19:38:59,563:INFO:Initializing predict_model()
+2023-08-14 19:38:59,564:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ExtraTreesClassifier(n_jobs=-1, random_state=123), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EBC97005E0>)
+2023-08-14 19:38:59,565:INFO:Checking exceptions
+2023-08-14 19:38:59,565:INFO:Preloading libraries
+2023-08-14 19:38:59,572:INFO:Set up data.
+2023-08-14 19:38:59,579:INFO:Set up index.
+2023-08-14 19:40:07,384:INFO:Initializing predict_model()
+2023-08-14 19:40:07,384:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ExtraTreesClassifier(n_jobs=-1, random_state=123), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EBCBD203A0>)
+2023-08-14 19:40:07,385:INFO:Checking exceptions
+2023-08-14 19:40:07,385:INFO:Preloading libraries
+2023-08-14 19:40:07,391:INFO:Set up data.
+2023-08-14 19:40:07,397:INFO:Set up index.
+2023-08-14 19:45:48,322:INFO:Initializing predict_model()
+2023-08-14 19:45:48,323:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001EBC0730310>, estimator=ExtraTreesClassifier(n_jobs=-1, random_state=123), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001EBCB3A3DC0>)
+2023-08-14 19:45:48,323:INFO:Checking exceptions
+2023-08-14 19:45:48,323:INFO:Preloading libraries
+2023-08-14 19:45:48,328:INFO:Set up data.
+2023-08-14 19:45:48,337:INFO:Set up index.
