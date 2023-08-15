@@ -8,17 +8,19 @@ Yanqiu Yang
 Jessica Ferraro
 
 
-Using Python, machine learning, sklearn, pandas, and plotly, our team is attempting to predict the zodiac signs of OK Cupid users.
+Using Python, machine learning, sklearn, pandas, and Tableau, our team is predicting wine type (red, white, other), price, and points and visualizing the data and results.
 
 Steps:
 
 1. Preprocess Data:
-     i. Clean data (looking out for null values)
-    ii. Classify certain text columns as numeric / dummy encoding
-2. Test several different machine learning models to predict zodiac signs based on several factors in the OK Cupid profiles
-     e.g. logistic regression, PCA, multi-label classification, k-means, etc.
-   Which factors are common amongst each sign?
-3. Plot visualizations to summarize test and training data results
+     i. Clean data (looking out for null values, outliers)
+    ii. Classify certain text columns as numeric / dummy encoding (one-hot-encoding the top 10 provinces of origin, for example)
+2. Test several different machine learning models to predict price, points, and/or wine type based on the available information on each wine
+     e.g. linear regression, PCA, multi-label classification, neural networks, etc.
+   Which factors are driving the price? Which factors are driving points? How can we predict wine type?
+3. Plot visualizations to summarize test and training data results, create visualizations of total dataset
+
 
 
 Link to dataset: https://www.kaggle.com/code/thuggy/ok-cupid-find-your-perfect-match/input?select=okcupid_profiles.csv
+Link to Tableau report: https://public.tableau.com/app/profile/jessica.ferraro/viz/Wine_16917203318780/Top10?publish=yes 
