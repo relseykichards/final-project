@@ -36,5 +36,5 @@ We created a CatBoostRegressor model with 1000 iterations to predict the wine pr
 
 ##### Links
 
-Link to dataset of wine: [click here to view]([https://www.kaggle.com/code/thuggy/ok-cupid-find-your-perfect-match/input?select=okcupid_profiles.csv](https://www.kaggle.com/code/pierreco/eda-worldwide-french-wines/input))
-Link to Tableau report of wine: [click here to view](https://public.tableau.com/app/profile/jessica.ferraro/viz/Wine_16917203318780/Top10?publish=yes)
+* Link to dataset of wine: [click here to view](https://www.kaggle.com/code/pierreco/eda-worldwide-french-wines/input)
+* Link to Tableau report of wine: [click here to view](https://public.tableau.com/app/profile/jessica.ferraro/viz/Wine_16917203318780/Top10?publish=yes)
