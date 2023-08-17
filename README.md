@@ -34,7 +34,8 @@ The data set we used for this project contains over 75k types of wine. The data 
 
 We created a CatBoostRegressor model with 1000 iterations to predict the wine price. We created a neural network to predict wine type based on province of origin. It was based on the top 10 provinces that we hot encoded. Our most successful model was predicting wine type using pycaret classification. We had several versions of this model. The first version predicted wine type using the text description from the data set. The second version of the model built on the first by adding province. The third version of the model included description, province, and designation. All three models yieled over 90% accuracy.
 
-##### Links
+### Links to Data/Tableau Report/Presentation Slides:
 
 * Link to dataset of wine: [click here to view](https://www.kaggle.com/code/pierreco/eda-worldwide-french-wines/input)
 * Link to Tableau report of wine: [click here to view](https://public.tableau.com/app/profile/jessica.ferraro/viz/Wine_16917203318780/Top10?publish=yes)
+* Link to Presentation Slides:[ click here to view](https://docs.google.com/presentation/d/1xKt4QAIv9kK5b7D9CmnzMaw93glQc4jb/edit#slide=id.g23bcb29e4ff_3_0)
