@@ -1,4 +1,4 @@
-# final-project - What's Your Sign?
+# final-project - Red or White?
 
 Team Members:
 Kelsey Richards
